@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BYOE Vocabulary</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 46rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+    code { background: #f4f4f4; padding: 0.1em 0.3em; border-radius: 3px; }
+    dt { font-weight: bold; margin-top: 1rem; }
+    dt:target { background: #fff3b8; }
+    .draft {
+      border: 1px solid #c9a400;
+      background: #fff9df;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    .reserved { color: #666; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #ddd; }
+      code { background: #2c2c2c; }
+      dt:target { background: #4a4000; }
+      .draft { background: #332f00; border-color: #665c00; }
+      .reserved { color: #999; }
+    }
+  </style>
+</head>
+<body>
+  <h1>BYOE Vocabulary</h1>
+  <p class="draft"><strong>Draft.</strong> This vocabulary is a work in
+    progress. Term definitions here are stubs pending the App Connect and
+    WAS Encrypted Collections specifications.</p>
+  <p>Namespace: <code>https://w3id.org/byoe#</code></p>
+  <p>This page defines the terms used by the BYOE (Bring Your Own
+    Everything) application stack: the App Connect wallet protocol and the
+    WAS Encrypted Collections profile. JSON-LD contexts:</p>
+  <ul>
+    <li><code>https://w3id.org/byoe/app-connect/v1</code></li>
+  </ul>
+
+  <h2>Credential terms</h2>
+  <dl>
+    <dt id="AppKeyCredential"><code>AppKeyCredential</code></dt>
+    <dd>Marker credential type identifying an app-key credential: a
+      self-issued credential carrying the seed from which an app's
+      per-user signing key is derived.</dd>
+    <dt id="seed"><code>seed</code></dt>
+    <dd>The app-key seed: 32 random bytes, base64url-encoded without
+      padding. The credential subject's DID is derived from this seed.</dd>
+    <dt id="origin"><code>origin</code></dt>
+    <dd>The web origin the app-key credential is bound to, as attested by
+      the wallet at issuance time.</dd>
+  </dl>
+
+  <h2>Presentation terms</h2>
+  <dl>
+    <dt id="zcap"><code>zcap</code></dt>
+    <dd>A set of authorization capability delegations included in a
+      wallet's App Connect response presentation.</dd>
+    <dt id="appConnect"><code>appConnect</code></dt>
+    <dd>App Connect response metadata (JSON literal), such as whether this
+      was the app's first connection for this user.</dd>
+  </dl>
+
+  <h2>Invocation-target descriptor types</h2>
+  <dl>
+    <dt id="collection"><code>collection</code></dt>
+    <dd>An app-scoped storage collection, provisioned when the grant is
+      approved.</dd>
+    <dt id="public-collection"><code>public-collection</code></dt>
+    <dd>A plaintext collection with public read access.</dd>
+    <dt id="shared-collection"><code>shared-collection</code></dt>
+    <dd>A read grant to another user's encrypted collection: a read
+      capability plus an encryption-roster entry, always both.</dd>
+    <dt id="space"><code>space</code></dt>
+    <dd>A whole storage Space as an invocation target (read-only
+      ceiling).</dd>
+    <dt id="managed-collection" class="reserved"><code>managed-collection</code>
+      (reserved)</dt>
+    <dd class="reserved">Reserved for a future write-access descriptor for
+      authoritative apps.</dd>
+    <dt id="publish-collection" class="reserved"><code>publish-collection</code>
+      (reserved)</dt>
+    <dd class="reserved">Reserved for a future standing-publish-grant
+      descriptor.</dd>
+    <dt id="collection-policy" class="reserved"><code>collection-policy</code>
+      (reserved)</dt>
+    <dd class="reserved">Reserved for a future runtime policy-control
+      descriptor.</dd>
+  </dl>
+
+  <h2>Resources</h2>
+  <ul>
+    <li><a href="https://github.com/interop-alliance/byoe-context">byoe-context repository</a></li>
+    <li><a href="https://github.com/w3c-ccg/wallet-attached-storage-spec">Wallet Attached Storage specification</a></li>
+  </ul>
+</body>
+</html>
