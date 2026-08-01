@@ -4,8 +4,11 @@ export const CONTEXT_V1 = {
     id: '@id',
     type: '@type',
     AppKeyCredential: 'https://w3id.org/byoe#AppKeyCredential',
+    LoginCredential: 'https://w3id.org/byoe#LoginCredential',
     seed: 'https://w3id.org/byoe#seed',
     origin: 'https://w3id.org/byoe#origin',
+    preferredUsername:
+      'https://www.w3.org/ns/activitystreams#preferredUsername',
     name: 'https://schema.org/name',
     description: 'https://schema.org/description',
     zcap: {

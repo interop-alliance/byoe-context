@@ -34,12 +34,7 @@ This package is ESM-only (`import`); it does not ship a CommonJS build.
 ## Usage
 
 ```js
-import {
-  contexts,
-  constants,
-  CONTEXT_URL_V1,
-  CONTEXT_V1
-} from 'byoe-context'
+import { contexts, constants, CONTEXT_URL_V1, CONTEXT_V1 } from 'byoe-context'
 
 CONTEXT_URL_V1
 // 'https://w3id.org/byoe/app-connect/v1'

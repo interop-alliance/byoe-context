@@ -50,6 +50,11 @@
     <dd>Marker credential type identifying an app-key credential: a
       self-issued credential carrying the seed from which an app's
       per-user signing key is derived.</dd>
+    <dt id="LoginCredential"><code>LoginCredential</code></dt>
+    <dd>Marker credential type identifying a Login Credential: a
+      self-issued credential (issuer and subject are the same DID) carrying
+      the user's preferred username (handle) as the ActivityStreams
+      <code>preferredUsername</code> claim.</dd>
     <dt id="seed"><code>seed</code></dt>
     <dd>The app-key seed: 32 random bytes, base64url-encoded without
       padding. The credential subject's DID is derived from this seed.</dd>
