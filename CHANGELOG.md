@@ -1,4 +1,4 @@
-# context-template ChangeLog
+# byoe-context ChangeLog
 
 ## 1.0.0 - TBD
 
