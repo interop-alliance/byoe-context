@@ -66,7 +66,8 @@
     "test:coverage": "vitest run --coverage"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "packageManager": "pnpm@11.13.0",
   "engines": {
