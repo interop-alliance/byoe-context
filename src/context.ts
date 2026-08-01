@@ -1,7 +1,20 @@
 export const CONTEXT_V1 = {
   '@context': {
+    '@protected': true,
     id: '@id',
     type: '@type',
-    '@protected': true
+    AppKeyCredential: 'https://w3id.org/byoe#AppKeyCredential',
+    seed: 'https://w3id.org/byoe#seed',
+    origin: 'https://w3id.org/byoe#origin',
+    name: 'https://schema.org/name',
+    description: 'https://schema.org/description',
+    zcap: {
+      '@id': 'https://w3id.org/byoe#zcap',
+      '@container': '@set'
+    },
+    appConnect: {
+      '@id': 'https://w3id.org/byoe#appConnect',
+      '@type': '@json'
+    }
   }
 }

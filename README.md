@@ -37,17 +37,12 @@ This package is ESM-only (`import`); it does not ship a CommonJS build.
 import {
   contexts,
   constants,
-  appContextMap,
   CONTEXT_URL_V1,
   CONTEXT_V1
 } from 'byoe-context'
 
 CONTEXT_URL_V1
-// 'https://w3id.org/example/v1'
-
-// Codec term map value for CBOR-LD
-constants.CBORLD_VALUE
-// 0x0..
+// 'https://w3id.org/byoe/app-connect/v1'
 
 // get context data for a specific context
 CONTEXT_V1
@@ -65,7 +60,6 @@ The library exports the following properties:
   only export one context).
 - `constants`: An object that maps constants to well-known context URLs.
 - `contexts`: A `Map` that maps URLs to full context data.
-- `appContextMap`: For use with `cborld` library.
 
 ## Developing
 
