@@ -1,6 +1,6 @@
 {
   "name": "byoe-context",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "BYOE (Bring Your Own Encryption) JSON-LD context.",
   "type": "module",
   "exports": {
@@ -66,8 +66,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "packageManager": "pnpm@11.13.0",
   "engines": {
