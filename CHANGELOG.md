@@ -1,5 +1,12 @@
 # byoe-context ChangeLog
 
+## 0.3.0 - TBD
+
+### Added
+
+- Add the `appUrl` term (`https://w3id.org/byoe#appUrl`) to `CONTEXT_V1`, with a
+  matching entry on the vocab page.
+
 ## 0.2.0 - 2026-08-01
 
 ### Added

@@ -5,6 +5,7 @@ export const CONTEXT_V1 = {
     type: '@type',
     AppKeyCredential: 'https://w3id.org/byoe#AppKeyCredential',
     LoginCredential: 'https://w3id.org/byoe#LoginCredential',
+    appUrl: 'https://w3id.org/byoe#appUrl',
     seed: 'https://w3id.org/byoe#seed',
     origin: 'https://w3id.org/byoe#origin',
     preferredUsername:

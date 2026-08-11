@@ -55,6 +55,12 @@
       self-issued credential (issuer and subject are the same DID) carrying
       the user's preferred username (handle) as the ActivityStreams
       <code>preferredUsername</code> claim.</dd>
+    <dt id="appUrl"><code>appUrl</code></dt>
+    <dd>The application URL the app-key credential belongs to: an absolute
+      URL with no fragment, same-origin with the attested
+      <code>origin</code>. The app-key identity is scoped to
+      (user, origin, <code>appUrl</code>), so one origin can host several
+      distinct apps.</dd>
     <dt id="seed"><code>seed</code></dt>
     <dd>The app-key seed: 32 random bytes, base64url-encoded without
       padding. The credential subject's DID is derived from this seed.</dd>
