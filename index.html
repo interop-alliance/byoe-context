@@ -81,17 +81,18 @@
 
   <h2>Invocation-target descriptor types</h2>
   <dl>
-    <dt id="collection"><code>collection</code></dt>
-    <dd>An app-scoped storage collection, provisioned when the grant is
-      approved.</dd>
+    <dt id="private-collection"><code>private-collection</code></dt>
+    <dd>An application-scoped encrypted collection in the user's Space,
+      provisioned when the grant is approved.</dd>
     <dt id="public-collection"><code>public-collection</code></dt>
     <dd>A plaintext collection with public read access.</dd>
-    <dt id="shared-collection"><code>shared-collection</code></dt>
-    <dd>A read grant to another user's encrypted collection: a read
-      capability plus an encryption-roster entry, always both.</dd>
-    <dt id="space"><code>space</code></dt>
-    <dd>A whole storage Space as an invocation target (read-only
-      ceiling).</dd>
+    <dt id="shared-wallet-collection"><code>shared-wallet-collection</code></dt>
+    <dd>Read-and-decrypt access to an encrypted collection the wallet
+      already owns: a read capability plus an encryption-roster entry,
+      always both.</dd>
+    <dt id="space" class="reserved"><code>space</code> (reserved)</dt>
+    <dd class="reserved">Reserved for a future Space-scoped read grant; the
+      App Connect profile grants collection-scoped access only.</dd>
     <dt id="managed-collection" class="reserved"><code>managed-collection</code>
       (reserved)</dt>
     <dd class="reserved">Reserved for a future write-access descriptor for
