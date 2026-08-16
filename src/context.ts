@@ -24,7 +24,7 @@ export const CONTEXT_V1 = {
 }
 
 /**
- * The bare BYOE vocab context, served at `https://w3id.org/byoe`. Defines the
+ * The BYOE vocab context, served at `https://w3id.org/byoe/v1`. Defines the
  * `MultikeyCommitment` verification-method type used by did:webvh documents
  * that publish hash-commitment verification methods, conceptually
  * inheriting from `https://w3id.org/security#Multikey`.

@@ -1,5 +1,19 @@
 # byoe-context ChangeLog
 
+## 0.5.0 - TBD
+
+### Changed
+
+- **BREAKING**: `VOCAB_CONTEXT_URL` changes from `https://w3id.org/byoe` to
+  `https://w3id.org/byoe/v1`, and the serialized file moves from
+  `contexts/byoe-v1.jsonld` to `contexts/v1.jsonld` (`VOCAB_CONTEXT_FILENAME`).
+  The versioned URL dereferences under the existing w3id.org redirect rule
+  (`/byoe/v1` to `contexts/v1.jsonld` on the GitHub Pages site); the bare
+  `/byoe` path remains a redirect to the vocabulary homepage. The context
+  contents are unchanged. Documents already minted with the bare URL are
+  unaffected but will not dereference; consumers should mint against the
+  versioned URL.
+
 ## 0.4.0 - 2026-08-15
 
 ### Added

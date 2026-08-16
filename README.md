@@ -51,7 +51,7 @@ CONTEXT_V1
 // full context object
 
 VOCAB_CONTEXT_URL
-// 'https://w3id.org/byoe'
+// 'https://w3id.org/byoe/v1'
 
 CONTEXT_VOCAB_V1
 // full context object
@@ -66,8 +66,8 @@ The library exports the following properties:
 
 - `CONTEXT_URL_V1` and `CONTEXT_V1`: the App Connect context, served at
   `https://w3id.org/byoe/app-connect/v1`.
-- `VOCAB_CONTEXT_URL` and `CONTEXT_VOCAB_V1`: the bare BYOE vocab context,
-  served at `https://w3id.org/byoe`. Defines the `MultikeyCommitment`
+- `VOCAB_CONTEXT_URL` and `CONTEXT_VOCAB_V1`: the BYOE vocab context, served at
+  `https://w3id.org/byoe/v1`. Defines the `MultikeyCommitment`
   verification-method type (and its `publicKeyCommitment` property) used by
   did:webvh documents that publish hash-commitment verification methods.
 - `constants`: An object that maps constants to well-known context URLs.

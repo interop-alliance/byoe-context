@@ -42,8 +42,8 @@ describe('BYOE vocab context', () => {
     expect(CONTEXT_VOCAB_V1).toBeDefined()
   })
 
-  it('is served at the bare vocab URL', () => {
-    expect(VOCAB_CONTEXT_URL).toBe('https://w3id.org/byoe')
+  it('is served at the versioned vocab URL', () => {
+    expect(VOCAB_CONTEXT_URL).toBe('https://w3id.org/byoe/v1')
   })
 
   it('contexts', () => {
