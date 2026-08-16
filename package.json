@@ -1,6 +1,6 @@
 {
   "name": "byoe-context",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "BYOE (Bring Your Own Encryption) JSON-LD context.",
   "type": "module",
   "exports": {
