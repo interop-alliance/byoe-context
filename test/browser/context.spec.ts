@@ -11,3 +11,15 @@ test('context module works in browser', async ({ page }) => {
   })
   expect(result).toHaveProperty('@context')
 })
+
+test('vocab context module works in browser', async ({ page }) => {
+  await page.goto('/test/index.html')
+  const result = await page.evaluate(async () => {
+    // This callback runs in the browser; '/src/index.ts' is a URL served by the
+    // vite dev server, not a module path tsc can resolve from disk.
+    // @ts-expect-error -- dev-server URL, resolved at runtime by vite
+    const { contexts, VOCAB_CONTEXT_URL } = await import('/src/index.ts')
+    return contexts.get(VOCAB_CONTEXT_URL)
+  })
+  expect(result).toHaveProperty('@context')
+})

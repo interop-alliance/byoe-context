@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "MultikeyCommitment": {
+      "@id": "https://w3id.org/security#MultikeyCommitment",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "controller": {
+          "@id": "https://w3id.org/security#controller",
+          "@type": "@id"
+        },
+        "publicKeyCommitment": "https://w3id.org/security#publicKeyCommitment"
+      }
+    }
+  }
+}

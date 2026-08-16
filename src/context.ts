@@ -22,3 +22,30 @@ export const CONTEXT_V1 = {
     }
   }
 }
+
+/**
+ * The bare BYOE vocab context, served at `https://w3id.org/byoe`. Defines the
+ * `MultikeyCommitment` verification-method type used by did:webvh documents
+ * that publish hash-commitment verification methods, conceptually
+ * inheriting from `https://w3id.org/security#Multikey`.
+ */
+export const CONTEXT_VOCAB_V1 = {
+  '@context': {
+    '@protected': true,
+    id: '@id',
+    type: '@type',
+    MultikeyCommitment: {
+      '@id': 'https://w3id.org/security#MultikeyCommitment',
+      '@context': {
+        '@protected': true,
+        id: '@id',
+        type: '@type',
+        controller: {
+          '@id': 'https://w3id.org/security#controller',
+          '@type': '@id'
+        },
+        publicKeyCommitment: 'https://w3id.org/security#publicKeyCommitment'
+      }
+    }
+  }
+}

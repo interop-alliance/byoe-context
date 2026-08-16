@@ -1,6 +1,17 @@
 # byoe-context ChangeLog
 
-## 0.3.1 - TBD
+## 0.4.0 - TBD
+
+### Added
+
+- Add a second context document, the bare BYOE vocab context served at
+  `https://w3id.org/byoe` (`VOCAB_CONTEXT_URL` / `CONTEXT_VOCAB_V1`, serialized
+  to `contexts/byoe-v1.jsonld`). Defines the `MultikeyCommitment`
+  verification-method type (`https://w3id.org/security#MultikeyCommitment`) and
+  its `publicKeyCommitment` property
+  (`https://w3id.org/security#publicKeyCommitment`, a plain string, not
+  multibase), for did:webvh documents that publish hash-commitment verification
+  methods.
 
 ### Changed
 

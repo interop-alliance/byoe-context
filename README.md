@@ -34,13 +34,26 @@ This package is ESM-only (`import`); it does not ship a CommonJS build.
 ## Usage
 
 ```js
-import { contexts, constants, CONTEXT_URL_V1, CONTEXT_V1 } from 'byoe-context'
+import {
+  contexts,
+  constants,
+  CONTEXT_URL_V1,
+  CONTEXT_V1,
+  VOCAB_CONTEXT_URL,
+  CONTEXT_VOCAB_V1
+} from 'byoe-context'
 
 CONTEXT_URL_V1
 // 'https://w3id.org/byoe/app-connect/v1'
 
 // get context data for a specific context
 CONTEXT_V1
+// full context object
+
+VOCAB_CONTEXT_URL
+// 'https://w3id.org/byoe'
+
+CONTEXT_VOCAB_V1
 // full context object
 ```
 
@@ -51,8 +64,12 @@ This package can be used directly in browser applications (via bundlers such as
 
 The library exports the following properties:
 
-- `CONTEXT_URL_V1` and `CONTEXT_V1` (it's recommended that context repositories
-  only export one context).
+- `CONTEXT_URL_V1` and `CONTEXT_V1`: the App Connect context, served at
+  `https://w3id.org/byoe/app-connect/v1`.
+- `VOCAB_CONTEXT_URL` and `CONTEXT_VOCAB_V1`: the bare BYOE vocab context,
+  served at `https://w3id.org/byoe`. Defines the `MultikeyCommitment`
+  verification-method type (and its `publicKeyCommitment` property) used by
+  did:webvh documents that publish hash-commitment verification methods.
 - `constants`: An object that maps constants to well-known context URLs.
 - `contexts`: A `Map` that maps URLs to full context data.
 
