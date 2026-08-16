@@ -1,6 +1,6 @@
 # byoe-context ChangeLog
 
-## 0.5.0 - TBD
+## 0.5.0 - 2026-08-16
 
 ### Changed
 
